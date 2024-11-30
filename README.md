@@ -5,9 +5,9 @@
 
 # cloudflare-docker-proxy
 
-![deploy](https://github.com/ciiiii/cloudflare-docker-proxy/actions/workflows/deploy.yaml/badge.svg)
+![deploy](https://github.com/newbee996/cloudflare-docker-proxy/actions/workflows/deploy.yaml/badge.svg)
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/ciiiii/cloudflare-docker-proxy)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/newbee996/cloudflare-docker-proxy)
 
 > If you're looking for proxy for helm, maybe you can try [cloudflare-helm-proxy](https://github.com/ciiiii/cloudflare-helm-proxy).
 
@@ -18,7 +18,7 @@
 2. modify the link of the above button to your fork url
 3. click the button, you will be redirected to the deploy page
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/ciiiii/cloudflare-docker-proxy)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/newbee996/cloudflare-docker-proxy)
 
 ## Config tutorial
 
@@ -36,11 +36,11 @@
    - add more records and modify the config as you need
    ```javascript
    const routes = {
-     "docker.libcuda.so": "https://registry-1.docker.io",
-     "quay.libcuda.so": "https://quay.io",
-     "gcr.libcuda.so": "https://k8s.gcr.io",
-     "k8s-gcr.libcuda.so": "https://k8s.gcr.io",
-     "ghcr.libcuda.so": "https://ghcr.io",
+     "docker.cloudflare-docker-proxy.newbee-vip.workers.dev": "https://registry-1.docker.io",
+     "quay.cloudflare-docker-proxy.newbee-vip.workers.dev": "https://quay.io",
+     "gcr.cloudflare-docker-proxy.newbee-vip.workers.dev": "https://k8s.gcr.io",
+     "k8s-gcr.cloudflare-docker-proxy.newbee-vip.workers.dev": "https://k8s.gcr.io",
+     "ghcr.cloudflare-docker-proxy.newbee-vip.workers.dev": "https://ghcr.io",
    };
    ```
 
